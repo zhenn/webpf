@@ -1,0 +1,13 @@
+{
+  "output": {
+    "EMERGENCY": false,
+    "ALERT": false,
+    "CRITICAL": false,
+    "ERROR": false,
+    "WARNING": true,
+    "NOTICE": true,
+    "INFO": true,
+    "DEBUG": false 
+  },
+  "throw": false
+}

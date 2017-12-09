@@ -1,0 +1,33 @@
+{
+  "name": "webpf",
+  "version": "1.0.0",
+  "description": "make webp picture to sequence frame that can be played with canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "webpf": "./bin/webp.js"
+  },
+  "keywords": [
+    "webp"
+  ],
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.8.0",
+    "copy-dir": "0.3.0",
+    "cp-file": "^3.1.0",
+    "json-comments": "^0.2.1",
+    "json-stable-stringify": "^1.0.1",
+    "mkdir-p": "0.0.6",
+    "node-http": "0.0.5",
+    "prompt": "^1.0.0",
+    "rmdir": "^1.2.0",
+    "rmdir-sync": "^1.0.1",
+    "step": "0.0.6",
+    "underscore": "^1.8.3",
+    "writefile": "^0.2.8"
+  },
+  "author": "zhenn",
+  "license": "ISC"
+}
