@@ -19,7 +19,7 @@
 - path：png源图文件夹
 - 产出物：webp-canvas文件夹，含序列帧播放demo、json配置文件、png雪碧图
 
-`webp fix -p path`
+`webpf fix -p path`
 
 - source/sprite两个子命令的集成体，可直接从webp转化到canvas播放demo
 - path：webp路径
