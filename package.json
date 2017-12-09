@@ -1,6 +1,6 @@
 {
   "name": "webpf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "make webp picture to sequence frame that can be played with canvas",
   "main": "index.js",
   "scripts": {

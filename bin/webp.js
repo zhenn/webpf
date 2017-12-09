@@ -34,7 +34,7 @@ program
     .command('fix')
     .description('change the webp image to sprite image and json config for the platform browser that does not support webp.')
     .action(function() {
-        // 比如 webp source -p path
+        // 比如 webp fix -p path
         source.split(program.webppath, function(_path) {
             sprite.build(_path);
         });
