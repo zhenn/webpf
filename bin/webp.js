@@ -4,6 +4,7 @@ var package = require('../package.json');
 var program = require('commander');
 var sprite = require('../core/sprite');
 var source = require('../core/sources');
+var compile = require('../core/compile');
 
 program
     .version(package.version)
@@ -36,7 +37,10 @@ program
     .action(function() {
         // 比如 webp fix -p path
         source.split(program.webppath, function(_path) {
-            sprite.build(_path);
+
+            sprite.build(_path, function(sourcepath, outpath){
+                compile(sourcepath, outpath);
+            });
         });
     });
 

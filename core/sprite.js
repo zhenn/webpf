@@ -7,7 +7,7 @@ var _process = require('child_process');
 var colors = require('colors');
 
 var sprite = {
-    build: function(sourceDir) {
+    build: function(sourceDir, callback) {
         var self = this;
         console.log(('生成合成图的图片源文件夹: ' + sourceDir).red);
         // 使用gka构建雪碧图
@@ -23,8 +23,11 @@ var sprite = {
         var bashlineMinifyPic = 'gka ' + sourceDir + ' -t canvas -m -o ' + ouputDir + ' --count 100';
         var bashline = 'gka ' + sourceDir + ' -t canvas -o ' + ouputDir + ' --count 100';
 
-        var buildChild = _process.exec(bashlineMinifyPic, function() {
+        var buildChild = _process.exec(bashline, function() {
             self.changeSpritePicName(ouputDir);
+            if (typeof callback == 'function') {
+                callback(sourceDir, ouputDir);
+            }
         });
         buildChild.stdout.on('data', function(data) {
             console.log(data.gray);
@@ -32,7 +35,7 @@ var sprite = {
     },
 
     changeSpritePicName(codeDir, name) {
-        console.log(codeDir);
+        // console.log(codeDir);
     }
 };
 
