@@ -23,7 +23,7 @@ var sprite = {
         var bashlineMinifyPic = 'gka ' + sourceDir + ' -t canvas -m -o ' + ouputDir + ' --count 100';
         var bashline = 'gka ' + sourceDir + ' -t canvas -o ' + ouputDir + ' --count 100';
 
-        var buildChild = _process.exec(bashline, function() {
+        var buildChild = _process.exec(bashlineMinifyPic, function() {
             self.changeSpritePicName(ouputDir);
             if (typeof callback == 'function') {
                 callback(sourceDir, ouputDir);
