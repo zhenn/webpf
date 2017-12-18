@@ -11,6 +11,10 @@
 	npm install gka -g
 	npm install gka-tpl-canvas -g
 
+## 安装方法
+
+	npm install webpf -g
+
 ## 命令介绍
 
 ### webp转换成png源图
