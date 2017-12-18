@@ -34,3 +34,7 @@
 
 - source/sprite两个子命令的集成体，可直接从webp转化到canvas播放demo
 - path：webp路径
+
+### 例子
+
+下载项目根目录下`lan.webp`文件到本地，执行命令`wepf fix -p path`。
