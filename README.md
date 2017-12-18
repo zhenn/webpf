@@ -2,7 +2,14 @@
 
 ## 简介
 
-把webp一键转化可用的序列帧动画，产出物包括canvas代码/png雪碧图/json配置文件。
+把webp一键转化可用的序列帧动画，产出物包括canvas代码/png雪碧图/json配置文件。此工具依赖于gka，详情请移步[这里](https://github.com/gkajs/gka)。
+
+运行本程序前，请确保本地已安装gka及模板gka-tpl-canvas。
+
+执行如下命令安装：
+	
+	npm install gka -g
+	npm install gka-tpl-canvas -g
 
 ## 命令介绍
 
